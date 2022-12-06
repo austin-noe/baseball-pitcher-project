@@ -1,13 +1,10 @@
-import configuration as config
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import altair as alt
-import plotly.graph_objects as go
-import plotly.offline as pyo
 import numpy as np
-import plotly as pl
+
 
 @st.cache
 def get_data():
