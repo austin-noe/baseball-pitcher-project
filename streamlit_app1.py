@@ -41,21 +41,8 @@ if pitchtype == "Starting":
     playerstats = startdf[(df.FullName == player)]
     playerstatsavg = playerstats[["ERA","R","W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO"]].mean()
     st.write(playerstatsavg)
-    import pandas as pd
-    from matplotlib import pyplot as plt
-    graph = (
-    plt.rcParams["figure.figsize"] = [7.00, 3.50]
-    plt.rcParams["figure.autolayout"] = True
-
-    df1 = playerstatsavg
-
-    df2 = teamrankavg
-
-    ax = df1.plot(x='stat', y='avg')
-    df2.plot(ax=ax, x='subject', y='marks'))
-
-    st.write(plt.show(graph))
-   
+  
+    
 
 
 elif pitchtype == "Relief" :
