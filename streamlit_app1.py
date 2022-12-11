@@ -4,7 +4,7 @@ import altair as alt
 import numpy as np
 st.set_page_config(layout="wide")
 
-st.header("Player Comparision Tool")
+st.header("MLB Player Comparision Tool")
 @st.cache
 def get_data():
     path = r'Pitching.csv'
