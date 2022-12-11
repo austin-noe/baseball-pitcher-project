@@ -14,7 +14,7 @@ df2= get_data()
 tab1, tab2, tab3= st.tabs(["Player Comparision", "select player 1", "select player 2"])
 with tab2:
     years = df['yearID'].drop_duplicates()
-    year_choice = st.selectbox('Please select a year', [" ", years]) 
+    year_choice = st.selectbox('Please select a year', years) 
     teams = df["TeamName"].loc[df["yearID"] == year_choice].drop_duplicates()
     team_choice = st.selectbox('Please Select a team:', teams)
 
